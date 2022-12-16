@@ -1,0 +1,73 @@
+git clone <https://name-of-the-repository-link>
+
+Creating branch:
+git branch <branch-name>
+
+
+To create branch locally:
+git push -u <remote> <branch-name>
+
+
+Viewing branches:
+git branch or git branch --list
+
+Deleting a branch:
+git branch -d <branch-name>
+
+
+git checkout mostly for switching from one branch to another. 
+git checkout <name-of-your-branch>
+
+
+creating and switching to a branch:
+git checkout -b <name-of-your-branch>
+
+
+The Git status command gives us all the necessary information about the current branch. 
+git status
+
+
+
+To add a single file:
+
+git add <file>
+
+
+To add all files:
+git add -A
+
+
+setting a check point:
+git commit -m "commit message"
+
+
+
+send your changes to the remote server. Git push uploads your commits to the remote repository.
+git push <remote> <branch-name>
+
+
+
+Push to new branch created 
+git push --set-upstream <remote> <name-of-your-branch>
+
+or
+
+git push -u origin <branch_name>
+
+
+
+The git pull command is used to get updates from the remote repo. This command is a combination of git fetch and git merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies the latest changes in your local (git merge).
+git pull <remote>
+
+Merge:
+First need to be on the specific branch that you want to merge with your feature branch.
+
+git checkout dev
+
+
+git fetch
+
+
+git merge <branch-name>
+
+
